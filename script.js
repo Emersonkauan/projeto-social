@@ -1,3 +1,5 @@
+
+
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -6,67 +8,68 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado:"Assim que saiu da base você se depara com propostas de alguns clubes, um com grande expressão e um de menor expressão"
+        enunciado:  "Assim que se destacou na base você se depara com propostas de alguns clubes um de grande expressão e um de menor expressão para qual vc vai?",
         alternativas: [
             {
-                texto: "Real Madrid",
-                afirmacao: "Nesse time você será reserva "
+                texto: "Santos!",
+                afirmacao: "Nesse clube você jogará pouco."
             },
             {
-                texto: "Barcelona",
-                afirmacao: "Você chega pra disputar posição."
+                texto: "CRB!",
+                afirmacao: "Você chega para ser titular, e ser o 10 do time."
             }
         ]
     },
     {
-        enunciado: "Após ficar muito tempo sem jogar, você recebeu uma proposta de empréstimo, para qual clube você vai?"
+        enunciado: "Após vc se destacar você recebeu uma proposta de alguns times da serie A do brasileirão para qual clube vc iria?",
         alternativas: [
             {
-                texto: "Santos",
-                afirmacao: "Você chegou pra compor elenco, mas se destacou e virou tutular"
+                texto: "Palmeiras!",
+                afirmacao: "Chegou para suprir a saída de algum jogador importante do time."
             },
             {
-                texto: "Corinthians"
-                afirmacao: "Você chegou com alta expectativa, mas acabou não entregando nada"
+                texto:"Atlético-MG!",
+                afirmacao: "Disputou posição e não se firmou como titular."
             }
         ]
     },
     {
-        enunciado: "Depois de um boa temporada no Brasil você voltou a Europa,seu clube colocou você na lista de transferência, você recebeu 2 propostas de clubes, pra qual vc vai?"
+        enunciado: "Após se destacar nesse clube,você recebeu duas propostas de patrocínio você aceitaria qual empresa de patrocinar?",
         alternativas: [
             {
-                texto: "Benfica"
-                afirmacao: "começou como reserva, entrou em alguns jogos e nao se tornou titular"
+                texto: "Adidas!",
+                afirmacao: "Você se tornou o cara dessa marca, e ganhou visibilidade e muito dinheiro."
             },
+                
             {
-                texto: "Girona",
-                afirmacao: "você chegou pra compor elenco e se tornou uma peça fundamental para o time"
+                texto:  "Puma!",
+                afirmacao:"Você dividiu sua imagem com o Neymar e não ganhou muito dinheiro."
             }
         ]
     },
     {
-        enunciado: "você esta em uma final de copa da liga, você recabeu um passe de seu companheiro e saiu cara a cara com o goleiro, o que você faria",
+        enunciado:  "Ao final da temporada do Brasileirão, você recebeu algumas propostas de clubes europeus, para qual clube você vai?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Liverpol!",
+                afirmacao: "Chegou para ser o cara do time, se destacou bastante e ganhou 1 Premier League."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto:  "Bayer Munchen!",
+                afirmacao: "Chegou para ser o cara do time, mas não entregou nada e virou reserva no começo da temporada."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você está na final da Champions League, você sai cara a cara com o goleiro, o que você faria?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Você tentaria ser ousado, tentava uma cavadinha!",
+                afirmacao: "Você errou, prejudicou o time e o seu time perdeu a final."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Você fazia o simples, chapava no canto!",
+                afirmacao: "Você fez o gol, se tornou o  heroi de um titulo inédito e ao final da temporada se sagrou o melhor jogador do mundo."
             }
         ]
     },
@@ -105,9 +108,9 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Em 2026...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
 
-mostraPergunta();s
+mostraPergunta();
